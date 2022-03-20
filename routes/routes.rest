@@ -1,0 +1,28 @@
+GET http://localhost:3000/subscribers
+
+###
+
+GET http://localhost:3000/subscribers/6236472235f7f5a34f65bee1
+
+
+###
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+    "name": "Awesome Subscriber",
+    "subscribedToChannel": "Superb Youtube Channel"
+}
+
+###
+
+DELETE http://localhost:3000/subscribers/6237687e1574b1814c00dffe
+
+###
+
+PATCH http://localhost:3000/subscribers/623769011574b1814c00e003
+Content-Type: application/json
+
+{
+  "name": "New Name"  
+}
